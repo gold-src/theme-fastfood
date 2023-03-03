@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JAKAGAIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="src/favicon/site.webmanifest">
+  <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div class="banner">
+    <img class="banner-logo" src="src/logo.png">
+  </div>
+  <div class="description">
+    <svg class="description-wave-top" viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+      <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#303C1E" />
+    </svg>
+    <h1 class="description-text">Le poulet frit coréen numéro 1 en France, <span class="description-text-big">JAKAGAIA</span>, est fabriqué à partir de poulet d'origine française qui est mariné et pané à la minute. Ce processus est le résultat de tests répétés de marinades et de sauces pour obtenir le croustillant et les saveurs coréennes uniques que vous pouvez déguster.</h1>
+    <svg class="description-wave-bot" viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+      <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#303C1E" />
+    </svg>
+  </div>
+  <div class="insta">
+    <h2 class="insta-title">DES INGRÉDIENTS SAVOUREUX DE QUALITÉ</h2>
+    <p class="insta-text">Nous sommes fiers d'utiliser des blancs de poulet français et des ingrédients de première qualité pour nos plats coréens à base de poulet frit croustillant. Chacune de nos recettes est soumise à des tests rigoureux pour atteindre la perfection et offrir des saveurs incomparables. Nous sommes convaincus que nos plats sont imbattables en termes de goût.</p>
+    <a href="https://instagram.com" target="_blank" class="insta-button">PARCOUREZ NOTRE INSTAGRAM</a>
+  </div>
+  <div class="menu">
+    <svg class="menu-wave-top" viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+      <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#303C1E" />
+    </svg>
+    <div class="menu-row">
+      <h3 class="menu-title">SUR LE MENU</h3>
+      <div class="menu-action">
+        <div class="menu-button" onclick="foodLeft()">
+          <svg class="menu-arrow" viewBox="0 0 145 42">
+            <path class="slider__controlPath" d="M35.75 41.1325L0.997469 21L35.75 0.867495L35.75 17.3627L35.75 17.8627L36.25 17.8627L144.5 17.8627L144.5 24.1373L36.25 24.1373L35.75 24.1373L35.75 24.6373L35.75 41.1325Z"></path>
+          </svg>
+        </div>
+        <div class="menu-button" onclick="foodRight()">
+          <svg class="menu-arrow menu-arrow-right" viewBox="0 0 145 42">
+            <path class="slider__controlPath" d="M35.75 41.1325L0.997469 21L35.75 0.867495L35.75 17.3627L35.75 17.8627L36.25 17.8627L144.5 17.8627L144.5 24.1373L36.25 24.1373L35.75 24.1373L35.75 24.6373L35.75 41.1325Z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="menu-slideshow">
+      <div class="menu-slide" style="left:5%">
+        <img class="menu-image" src="src/menu1.jpeg">
+        <p class="menu-text">Burger poulet</p>
+      </div>
+      <div class="menu-slide" style="left:32%">
+        <img class="menu-image" src="src/menu2.jpeg">
+        <p class="menu-text">Milkshake oreo</p>
+      </div>
+      <div class="menu-slide" style="left:59%">
+        <img class="menu-image" src="src/menu1.jpeg">
+        <p class="menu-text">Burger vegan</p>
+      </div>
+      <div class="menu-slide" style="left:86%">
+        <img class="menu-image" src="src/menu2.jpeg">
+        <p class="menu-text">Milkshake kinder</p>
+      </div>
+      <div class="menu-slide" style="left:113%">
+        <img class="menu-image" src="src/menu1.jpeg">
+        <p class="menu-text">Burger boeuf</p>
+      </div>
+    </div>
+    <a href="https://instagram.com" target="_blank" class="insta-button">VOIR LE MENU COMPLET</a>
+    <svg class="menu-wave-bot" viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+      <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#303C1E" />
+    </svg>
+  </div>
+  <div class="comments">
+    <div class="comments-action">
+      <div class="comments-button" onclick="plusSlides(1)">
+        <svg class="comments-arrow" viewBox="0 0 145 42">
+          <path class="slider__controlPath" d="M35.75 41.1325L0.997469 21L35.75 0.867495L35.75 17.3627L35.75 17.8627L36.25 17.8627L144.5 17.8627L144.5 24.1373L36.25 24.1373L35.75 24.1373L35.75 24.6373L35.75 41.1325Z"></path>
+        </svg>
+      </div>
+      <p class="comments-number">1/3</p>
+      <div class="comments-button" onclick="plusSlides(1)">
+        <svg class="comments-arrow comments-arrow-right" viewBox="0 0 145 42">
+          <path class="slider__controlPath" d="M35.75 41.1325L0.997469 21L35.75 0.867495L35.75 17.3627L35.75 17.8627L36.25 17.8627L144.5 17.8627L144.5 24.1373L36.25 24.1373L35.75 24.1373L35.75 24.6373L35.75 41.1325Z"></path>
+        </svg>
+      </div>
+    </div>
+    <p class="comments-title">CE QUE LES GENS DISENT</p>
+    <div class="comments-comment">
+      <p class="comments-text">"Nous avons commandé de la nourriture via Deliveroo et nous avons été agréablement surpris ! Le goût était très original et unique. Nous recommandons vivement cette expérience culinaire !"</p>
+      <p class="comments-name">Kevin - client de JAKAGAIA, France</p>
+    </div>
+    <div class="comments-comment">
+      <p class="comments-text">"Je suis ravi d'avoir découvert un endroit incroyable pour les amateurs de poulet comme moi. La qualité est incomparable à tout ce que j'ai goûté auparavant. Si vous êtes un amateur de poulet, je vous recommande vivement de l'essayer !"</p>
+      <p class="comments-name">Jean - client de JAKAGAIA, France</p>
+    </div>
+  </div>
+  <div class="bottom">
+    <svg class="bottom-wave-top" viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+      <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#303C1E" />
+    </svg>
+    <p class="bottom-title">OU NOUS TROUVER</p>
+    <p class="bottom-adress">110 Bd Gambetta, 06000 Nice</p>
+    <div class="bottom-socials">
+      <a class="bottom-link bottom-link-first" href="https://www.instagram.com/" target="_blank">
+        <svg class="bottom-icon" viewBox="0 0 40 40">
+          <title>Instagram logo</title>
+          <path class="bottom-icon-path" d="M20 0C25.434 0 26.112 0.0199999 28.244 0.12C30.374 0.22 31.824 0.554 33.1 1.05C34.42 1.558 35.532 2.246 36.644 3.356C37.661 4.35579 38.4479 5.56518 38.95 6.9C39.444 8.174 39.78 9.626 39.88 11.756C39.974 13.888 40 14.566 40 20C40 25.434 39.98 26.112 39.88 28.244C39.78 30.374 39.444 31.824 38.95 33.1C38.4494 34.4356 37.6622 35.6452 36.644 36.644C35.6439 37.6606 34.4346 38.4475 33.1 38.95C31.826 39.444 30.374 39.78 28.244 39.88C26.112 39.974 25.434 40 20 40C14.566 40 13.888 39.98 11.756 39.88C9.626 39.78 8.176 39.444 6.9 38.95C5.56465 38.4489 4.35505 37.6619 3.356 36.644C2.33881 35.6444 1.55186 34.4349 1.05 33.1C0.554 31.826 0.22 30.374 0.12 28.244C0.0259999 26.112 0 25.434 0 20C0 14.566 0.0199999 13.888 0.12 11.756C0.22 9.624 0.554 8.176 1.05 6.9C1.55047 5.56436 2.33761 4.35464 3.356 3.356C4.35534 2.33846 5.56486 1.55146 6.9 1.05C8.176 0.554 9.624 0.22 11.756 0.12C13.888 0.0259999 14.566 0 20 0ZM20 10C17.3478 10 14.8043 11.0536 12.9289 12.9289C11.0536 14.8043 10 17.3478 10 20C10 22.6522 11.0536 25.1957 12.9289 27.0711C14.8043 28.9464 17.3478 30 20 30C22.6522 30 25.1957 28.9464 27.0711 27.0711C28.9464 25.1957 30 22.6522 30 20C30 17.3478 28.9464 14.8043 27.0711 12.9289C25.1957 11.0536 22.6522 10 20 10ZM33 9.5C33 8.83696 32.7366 8.20107 32.2678 7.73223C31.7989 7.26339 31.163 7 30.5 7C29.837 7 29.2011 7.26339 28.7322 7.73223C28.2634 8.20107 28 8.83696 28 9.5C28 10.163 28.2634 10.7989 28.7322 11.2678C29.2011 11.7366 29.837 12 30.5 12C31.163 12 31.7989 11.7366 32.2678 11.2678C32.7366 10.7989 33 10.163 33 9.5ZM20 14C21.5913 14 23.1174 14.6321 24.2426 15.7574C25.3679 16.8826 26 18.4087 26 20C26 21.5913 25.3679 23.1174 24.2426 24.2426C23.1174 25.3679 21.5913 26 20 26C18.4087 26 16.8826 25.3679 15.7574 24.2426C14.6321 23.1174 14 21.5913 14 20C14 18.4087 14.6321 16.8826 15.7574 15.7574C16.8826 14.6321 18.4087 14 20 14Z"></path>
+        </svg>
+      </a>
+      <a class="bottom-link" href="https://www.tiktok.com/" target="_blank">
+        <svg class="bottom-icon" viewBox="0 0 42 43">
+          <title>TikTok logo</title>
+          <path class="bottom-icon-path" d="M41.3125 13.4063V21.2188C41.3125 21.6332 41.1479 22.0306 40.8549 22.3236C40.5618 22.6166 40.1644 22.7813 39.75 22.7813C36.4861 22.7884 33.2691 22.0037 30.375 20.4945V27.4688C30.3746 30.2925 29.5688 33.0576 28.0521 35.4394C26.5354 37.8213 24.3707 39.7212 21.8122 40.916C19.2537 42.1108 16.4075 42.5511 13.6075 42.1852C10.8076 41.8192 8.17009 40.6622 6.00461 38.8499C3.83913 37.0377 2.23551 34.6453 1.38192 31.9536C0.528344 29.262 0.460229 26.3827 1.18557 23.6537C1.91092 20.9247 3.39962 18.4592 5.47698 16.5465C7.55434 14.6339 10.1342 13.3534 12.9137 12.8555C13.1385 12.8154 13.3694 12.8252 13.5901 12.884C13.8107 12.9429 14.0158 13.0494 14.1909 13.196C14.3659 13.3427 14.5067 13.5259 14.6033 13.7328C14.6999 13.9398 14.75 14.1654 14.75 14.3938V22.5264C14.75 22.8219 14.6662 23.1114 14.5083 23.3612C14.3504 23.611 14.1249 23.8109 13.858 23.9377C13.2261 24.2371 12.6861 24.7005 12.2944 25.2797C11.9027 25.8589 11.6736 26.5326 11.6311 27.2306C11.5885 27.9285 11.734 28.6251 12.0525 29.2476C12.3709 29.8701 12.8506 30.3957 13.4414 30.7696C14.0323 31.1436 14.7126 31.3521 15.4115 31.3734C16.1104 31.3947 16.8022 31.2281 17.4148 30.8909C18.0273 30.5537 18.5381 30.0582 18.8939 29.4563C19.2497 28.8544 19.4374 28.168 19.4375 27.4688V2.46875C19.4375 2.05435 19.6021 1.65692 19.8951 1.3639C20.1882 1.07087 20.5856 0.90625 21 0.90625H28.8125C29.2269 0.90625 29.6243 1.07087 29.9174 1.3639C30.2104 1.65692 30.375 2.05435 30.375 2.46875C30.3778 4.9543 31.3664 7.33724 33.124 9.09479C34.8815 10.8523 37.2645 11.841 39.75 11.8438C40.1644 11.8438 40.5618 12.0084 40.8549 12.3014C41.1479 12.5944 41.3125 12.9918 41.3125 13.4063Z"></path>
+        </svg>
+      </a>
+      <a class="bottom-link" href="https://www.linkedin.com/" target="_blank">
+        <svg class="bottom-icon" viewBox="0 0 40 40">
+          <title>LinkedIn logo</title>
+          <path class="bottom-icon-path" d="M8.9546 40H0.661452V13.2943H8.9546V40ZM4.80303 9.65143C2.15151 9.65143 0 7.45429 0 4.80286C0 3.52906 0.506032 2.30743 1.40677 1.40672C2.30752 0.506014 3.52919 0 4.80303 0C6.07687 0 7.29854 0.506014 8.19928 1.40672C9.10003 2.30743 9.60606 3.52906 9.60606 4.80286C9.60606 7.45429 7.45455 9.65143 4.80303 9.65143ZM39.9929 40H31.7183V27C31.7183 23.9014 31.6554 19.9286 27.4067 19.9286C23.0951 19.9286 22.4337 23.2943 22.4337 26.7771V40H14.1491V13.2943H22.1022V16.9371H22.2179C23.3251 14.8386 26.0295 12.6243 30.0639 12.6243C38.4571 12.6243 40 18.1514 40 25.33V40H39.9929Z"></path>
+        </svg>
+      </a>
+      <a class="bottom-link" href="https://twitter.com/" target="_blank">
+        <svg class="bottom-icon" viewBox="0 0 45 38">
+        <title>Twitter logo</title>
+        <path class="bottom-icon-path" d="M44.3454 4.44042C42.7146 5.1908 40.9628 5.69781 39.1211 5.92698C41.0214 4.74624 42.4431 2.88789 43.1209 0.698696C41.3355 1.7999 39.3815 2.57503 37.3438 2.99038C35.9735 1.4711 34.1586 0.464105 32.1807 0.125723C30.2028 -0.212659 28.1726 0.136507 26.4054 1.11901C24.6382 2.10152 23.2328 3.66239 22.4074 5.5593C21.582 7.45621 21.3828 9.58302 21.8407 11.6095C18.2231 11.4209 14.6841 10.4445 11.4534 8.74372C8.22267 7.04292 5.37247 4.65572 3.08774 1.73705C2.30652 3.1364 1.85733 4.75883 1.85733 6.48671C1.85646 8.04221 2.22534 9.57388 2.93126 10.9458C3.63717 12.3178 4.65828 13.4876 5.904 14.3514C4.4593 14.3037 3.04647 13.8983 1.78311 13.1691V13.2908C1.78297 15.4724 2.5097 17.5869 3.84001 19.2755C5.17031 20.9641 7.02225 22.1227 9.08158 22.5548C7.74138 22.9315 6.33628 22.987 4.97241 22.7171C5.55343 24.5943 6.6852 26.2358 8.20929 27.4118C9.73338 28.5879 11.5735 29.2396 13.472 29.2758C10.2492 31.9029 6.269 33.328 2.17177 33.3217C1.44598 33.3219 0.720816 33.2779 0 33.1899C4.15892 35.9666 9.00021 37.4403 13.9446 37.4346C30.6821 37.4346 39.832 23.0396 39.832 10.555C39.832 10.1493 39.8222 9.73968 39.8046 9.33408C41.5844 7.99755 43.1207 6.34251 44.3415 4.44651L44.3454 4.44042Z"></path>
+        </svg>
+        </a>
+    </div>
+    <img class="bottom-logo" src="src/logo.png">
+  </div>
+  <script type ="text/javascript" src="comments.js"></script>
+</body>
+</html>

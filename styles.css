@@ -1,0 +1,499 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  font-family: 'Golos Text';
+  flex-direction: column;
+  background-color: #303C1E;
+  color: #000;
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  background-image: url("src/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-logo {
+  height: 30vh;
+  width: 30vh;
+  position: absolute;
+  bottom: -5vh;
+  left: calc(50vw - 15vh);
+  z-index: 10;
+}
+
+.description {
+  display: flex;
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-color: #303C1E;
+  padding: 10vh 0;
+}
+
+.description-wave-top {
+  display: inline-block;
+  position: absolute;
+  top: -55px;
+  z-index: 1;
+}
+
+.description-wave-bot {
+  display: inline-block;
+  position: absolute;
+  bottom: -55px;
+  z-index: 1;
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+.description-text {
+  margin: auto 15%;
+  color: #FDD69A;
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.description-text-big {
+  font-size: 2.8rem;
+}
+
+.insta {
+  display: flex;
+  height: 70vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("src/insta.jpeg");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+
+.insta-title {
+  display: flex;
+  color: #FDD69A;
+  margin: auto auto 40px 5%;
+  width: 40vw;
+  font-size: 2.8rem;
+}
+
+.insta-text {
+  display: flex;
+  color: #FDD69A;
+  margin: 0 auto 0 5%;
+  width: 50vw;
+  font-size: 20px;
+}
+
+.insta-button {
+  display: flex;
+  color: #FDD69A;
+  margin: 40px auto auto 5%;
+  font-size: 22px;
+  letter-spacing: 4px;
+  background-color: #A2481F;
+  padding: 20px 60px;
+  border-radius: 50px;
+  border: 1px solid #FDD69A;
+  text-decoration: none;
+  outline: 1px #A2481F solid;
+  outline-offset: 10px;
+  transition: 0.3s;
+}
+
+.insta-button:hover {
+  outline: none;
+  border: 1px solid #FDD69A;
+  background-color: #FDD69A;
+  outline: 11px #FDD69A solid;
+  outline-offset: -1px;
+  color: #A2481F;
+  /* font-weight: 700; */
+  transition: 0.3s;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 60vh;
+  width: 100%;
+  background-color: #303C1E;
+  padding: 10vh 0;
+}
+
+.menu-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+}
+
+.menu-title {
+  display: flex;
+  margin: auto auto auto 5%;
+  color: #FDD69A;
+  font-size: 2.8rem;
+}
+
+.menu-action {
+  display: flex;
+  flex-direction: row;
+  margin: auto 5% auto auto;
+  user-select: none;
+}
+
+.menu-button {
+  display: flex;
+  margin: auto;
+}
+
+.menu-arrow {
+  display: flex;
+  fill: #303C1E;
+  stroke: #FDD69A;
+  width: 140px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.menu-arrow:hover {
+  fill: #FDD69A;
+  transition: 0.3s;
+}
+
+.menu-arrow-right {
+  transform: scaleX(-1);
+}
+
+.menu-slideshow {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  user-select: none;
+}
+
+.menu-slide {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 0%;
+  height: 100%;
+  width: 25vw;
+  transition: 0.3s;
+}
+
+.menu-image {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.menu-text {
+  display: flex;
+  margin: auto;
+  color: #FDD69A;
+  font-size: 30px;
+}
+
+.menu-wave-top {
+  display: inline-block;
+  position: absolute;
+  top: -55px;
+  z-index: 1;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.menu-wave-bot {
+  display: inline-block;
+  position: absolute;
+  bottom: -55px;
+  z-index: 1;
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: #A2481F;
+}
+
+.comments-action {
+  display: flex;
+  user-select: none;
+  flex-direction: row;
+  margin: 110px auto 40px;
+}
+
+.comments-button {
+  display: flex;
+  margin: auto; 
+}
+
+.comments-arrow {
+  display: flex;
+  fill: #A2481F;
+  stroke: #FDD69A;
+  width: 140px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.comments-arrow:hover {
+  fill: #FDD69A;
+  transition: 0.3s;
+}
+
+.comments-arrow-right {
+  transform: scaleX(-1);
+}
+
+.comments-number {
+  display: flex;
+  font-size: 20px;
+  color: #FDD69A;
+  margin: auto 0;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+.comments-title {
+  display: flex;
+  font-size: 24px;
+  color: #FDD69A;
+  margin: 0 auto;
+}
+
+.comments-comment {
+  display: none;
+  flex-direction: column;
+  margin: 40px auto;
+  width: 70vw;
+  transition: 0.3s;
+}
+
+.comments-text {
+  display: flex;
+  margin: auto;
+  font-size: 40px;
+  color: #FDD69A;
+  text-align: center;
+}
+
+.comments-name {
+  display: flex;
+  margin: 40px auto 0;
+  font-size: 20px;
+  color: #FDD69A;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 40vh;
+  background-color: #303C1E;
+}
+
+.bottom-wave-top {
+  display: inline-block;
+  position: absolute;
+  top: -55px;
+  z-index: 1;
+}
+
+.bottom-title {
+  display: flex;
+  margin: 110px auto 20px 5%;
+  color: #FDD69A;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.bottom-adress {
+  display: flex;
+  margin: 0 auto 40px 5%;
+  font-size: 20px;
+  color: #FDD69A;
+}
+
+.bottom-socials {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bottom-link {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  justify-content: center;
+  margin: auto 20px;
+  padding: 1rem;
+  color: #FDD69A;
+  transition: 0.3s;
+}
+
+.bottom-link-first {
+  margin-left: 5%;
+}
+
+.bottom-icon {
+  height: 2rem;
+  width: 2rem;
+  color: #FDD69A;
+}
+
+.bottom-icon-path {
+  fill: #FDD69A;
+  transition: 0.3s;
+}
+
+.bottom-link:hover {
+  transition: 0.3s;
+  background-color: #FDD69A;
+}
+
+.bottom-link:hover .bottom-icon-path {
+  transition: 0.3s;
+  fill: #303C1E;
+}
+
+.bottom-logo {
+  display: flex;
+  right: 5%;
+  top: calc(20vh - 100px);
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .banner-logo {
+    height: 150px;
+    width: 150px;
+    left: calc(50vw - 75px);
+    bottom: -30px;
+  }
+  
+  .description-text {
+    margin: auto 5%;
+    font-size: 1.5rem;
+  }
+
+  .description-text-big {
+    font-size: 2rem;
+  }
+
+  .insta {
+    height: 80vh;
+  }
+
+  .insta-title {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+
+  .insta-text {
+    width: 90vw;
+  }
+
+  .insta-button {
+    margin: auto auto;
+    font-size: 16px;
+    padding: 10px 40px;
+    text-align: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 60vw;
+  }
+
+  .menu-title {
+    margin: auto;
+  }
+
+  .menu-row {
+    flex-direction: column;
+  }
+
+  .menu-action {
+    margin: auto;
+  }
+
+  .menu-arrow {
+    width: 110px;
+  }
+
+  .comments {
+    height: 70vh;
+  }
+
+  .comments-arrow {
+    width: 110px;
+  }
+
+  .comments-comment {
+    margin: 40px auto;
+    width: 80vw;
+  }
+
+  .comments-text {
+    font-size: 20px;
+  }
+
+  .comments-name {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bottom {
+    height: 65vh;
+  }
+
+  .bottom-title {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .bottom-adress {
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+
+  .bottom-link {
+    margin: auto;
+  }
+
+  .bottom-link-first {
+    margin-left: auto;
+  }
+
+  .bottom-logo {
+    position: static;
+    margin: 40px auto;
+  }
+}
